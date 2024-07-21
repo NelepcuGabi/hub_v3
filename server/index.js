@@ -1,12 +1,14 @@
 const express = require ('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
+const cookieParser = require('cookie-parser');
 const authRouter = require('./routes/authRoute')
 const app = express();
  //MiddleWares
 app.use(cors());
 app.use(express.json());
 
+app.use(cookieParser());
  //Routes
 app.use ('/api/auth', authRouter);
 
