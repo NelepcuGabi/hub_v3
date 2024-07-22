@@ -87,7 +87,7 @@ function Navbar() {
           </>
         )}
         <li className="nav__item">
-          <Link to="/projects" className="nav__link" onClick={navToggle}>
+          <Link to="/proiecte" className="nav__link" onClick={navToggle}>
             Proiecte
           </Link>
         </li>

@@ -6,6 +6,7 @@ import Register from './Auth/Register';
 import Login from './Auth/Login';
 import Dashboard from './pages/Dashboard';
 import Navbar from './components/NavBar.jsx';
+import Proiecte from './pages/Proiecte.jsx'
 import { useAuth } from "./contexts/AuthContext.jsx";
 
 const App = () => {
@@ -24,6 +25,7 @@ const App = () => {
         <Route path="/register" element={!isAuthenticated ? <Register /> : <Navigate to="/dashboard" />} />
         <Route path="/login" element={!isAuthenticated ? <Login /> : <Navigate to="/dashboard" />} />
         <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/proiecte" element={<Proiecte/>}/>
       </Routes>
     </Router>
 

@@ -35,9 +35,7 @@ function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="footer">
-        <p>&copy; 2024 E-Learning Hub. Toate drepturile rezervate.</p>
-      </footer>
+      
     </div>
   );
 }
